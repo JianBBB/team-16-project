@@ -1,7 +1,7 @@
 package com.sparta.ordersystem.order.management.menu.entity;
 
 import com.sparta.ordersystem.order.management.menu.dto.UpdateRequestDto;
-import com.sparta.ordersystem.order.management.OrderMenu.OrderMenu;
+import com.sparta.ordersystem.order.management.ordermenu.OrderMenu;
 import com.sparta.ordersystem.order.management.store.entity.Store;
 import com.sparta.ordersystem.order.management.common.Timestamped;
 import jakarta.persistence.*;
