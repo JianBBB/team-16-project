@@ -1,4 +1,4 @@
-package com.sparta.ordersystem.order.management.Payment.entity;
+package com.sparta.ordersystem.order.management.payment.entity;
 
 public enum PaymentMethod {
     CREDIT_CARD,    // 신용카드

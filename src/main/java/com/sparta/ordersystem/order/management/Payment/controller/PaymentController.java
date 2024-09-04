@@ -1,9 +1,9 @@
-package com.sparta.ordersystem.order.management.Payment.controller;
+package com.sparta.ordersystem.order.management.payment.controller;
 
-import com.sparta.ordersystem.order.management.Payment.dto.CreatePaymentRequestDto;
-import com.sparta.ordersystem.order.management.Payment.dto.UpdateStatusRequestDto;
-import com.sparta.ordersystem.order.management.Payment.service.PaymentService;
-import com.sparta.ordersystem.order.management.User.security.UserDetailsImpl;
+import com.sparta.ordersystem.order.management.payment.dto.CreatePaymentRequestDto;
+import com.sparta.ordersystem.order.management.payment.dto.UpdateStatusRequestDto;
+import com.sparta.ordersystem.order.management.payment.service.PaymentService;
+import com.sparta.ordersystem.order.management.user.security.UserDetailsImpl;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

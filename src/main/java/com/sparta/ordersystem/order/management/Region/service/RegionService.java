@@ -1,10 +1,10 @@
-package com.sparta.ordersystem.order.management.Region.service;
+package com.sparta.ordersystem.order.management.region.service;
 
-import com.sparta.ordersystem.order.management.Region.dto.*;
-import com.sparta.ordersystem.order.management.Region.entity.Region;
-import com.sparta.ordersystem.order.management.Region.repository.RegionRepository;
-import com.sparta.ordersystem.order.management.User.entity.User;
-import com.sparta.ordersystem.order.management.User.entity.UserRoleEnum;
+import com.sparta.ordersystem.order.management.region.dto.*;
+import com.sparta.ordersystem.order.management.region.entity.Region;
+import com.sparta.ordersystem.order.management.region.repository.RegionRepository;
+import com.sparta.ordersystem.order.management.user.entity.User;
+import com.sparta.ordersystem.order.management.user.entity.UserRoleEnum;
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.context.MessageSource;

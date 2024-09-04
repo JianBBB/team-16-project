@@ -1,6 +1,6 @@
-package com.sparta.ordersystem.order.management.User.dto;
+package com.sparta.ordersystem.order.management.user.dto;
 
-import com.sparta.ordersystem.order.management.User.entity.UserRoleEnum;
+import com.sparta.ordersystem.order.management.user.entity.UserRoleEnum;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

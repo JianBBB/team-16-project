@@ -1,7 +1,7 @@
-package com.sparta.ordersystem.order.management.Delivery.entity;
+package com.sparta.ordersystem.order.management.delivery.entity;
 
-import com.sparta.ordersystem.order.management.Delivery.dto.UpdateDeliveryRequestDto;
-import com.sparta.ordersystem.order.management.Order.entity.Order;
+import com.sparta.ordersystem.order.management.delivery.dto.UpdateDeliveryRequestDto;
+import com.sparta.ordersystem.order.management.order.entity.Order;
 import com.sparta.ordersystem.order.management.common.Timestamped;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;

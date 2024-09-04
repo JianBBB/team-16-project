@@ -1,38 +1,31 @@
-package com.sparta.ordersystem.order.management.Order;
+package com.sparta.ordersystem.order.management.order;
 
-import com.sparta.ordersystem.order.management.Category.entity.Category;
-import com.sparta.ordersystem.order.management.Menu.entity.Menu;
-import com.sparta.ordersystem.order.management.Menu.exception.MenuNotFoundException;
-import com.sparta.ordersystem.order.management.Menu.repository.MenuRepository;
-import com.sparta.ordersystem.order.management.Order.dto.OrderMenuDto;
-import com.sparta.ordersystem.order.management.Order.dto.OrderResponseDto;
-import com.sparta.ordersystem.order.management.Order.dto.CreateOrderRequestDto;
-import com.sparta.ordersystem.order.management.Order.entity.Order;
-import com.sparta.ordersystem.order.management.Order.entity.OrderStatus;
-import com.sparta.ordersystem.order.management.Order.entity.OrderType;
-import com.sparta.ordersystem.order.management.Order.exception.OrderNotFoundException;
-import com.sparta.ordersystem.order.management.Order.repository.OrderRepository;
-import com.sparta.ordersystem.order.management.Order.service.OrderService;
-import com.sparta.ordersystem.order.management.Region.entity.Region;
-import com.sparta.ordersystem.order.management.Store.entity.Store;
-import com.sparta.ordersystem.order.management.Store.repository.StoreRepository;
-import com.sparta.ordersystem.order.management.User.entity.User;
-import com.sparta.ordersystem.order.management.User.entity.UserRoleEnum;
-import com.sparta.ordersystem.order.management.User.security.UserDetailsImpl;
+import com.sparta.ordersystem.order.management.category.entity.Category;
+import com.sparta.ordersystem.order.management.menu.entity.Menu;
+import com.sparta.ordersystem.order.management.menu.exception.MenuNotFoundException;
+import com.sparta.ordersystem.order.management.menu.repository.MenuRepository;
+import com.sparta.ordersystem.order.management.order.dto.CreateOrderRequestDto;
+import com.sparta.ordersystem.order.management.order.entity.Order;
+import com.sparta.ordersystem.order.management.order.entity.OrderStatus;
+import com.sparta.ordersystem.order.management.order.entity.OrderType;
+import com.sparta.ordersystem.order.management.order.exception.OrderNotFoundException;
+import com.sparta.ordersystem.order.management.order.repository.OrderRepository;
+import com.sparta.ordersystem.order.management.order.service.OrderService;
+import com.sparta.ordersystem.order.management.region.entity.Region;
+import com.sparta.ordersystem.order.management.store.entity.Store;
+import com.sparta.ordersystem.order.management.store.repository.StoreRepository;
+import com.sparta.ordersystem.order.management.user.entity.User;
+import com.sparta.ordersystem.order.management.user.entity.UserRoleEnum;
+import com.sparta.ordersystem.order.management.user.security.UserDetailsImpl;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.security.access.AccessDeniedException;
 
 import java.util.Arrays;
-import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -79,7 +72,7 @@ class OrderServiceTest {
         );
 
         // then
-        assertEquals(exception.getMessage(),"Store with id " + storeId + " not found");
+        assertEquals(exception.getMessage(),"store with id " + storeId + " not found");
     }
 
     @Test

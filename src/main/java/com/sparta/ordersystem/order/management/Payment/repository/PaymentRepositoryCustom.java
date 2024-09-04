@@ -1,6 +1,6 @@
-package com.sparta.ordersystem.order.management.Payment.repository;
+package com.sparta.ordersystem.order.management.payment.repository;
 
-import com.sparta.ordersystem.order.management.Payment.dto.PaymentResponseDto;
+import com.sparta.ordersystem.order.management.payment.dto.PaymentResponseDto;
 
 import java.util.List;
 

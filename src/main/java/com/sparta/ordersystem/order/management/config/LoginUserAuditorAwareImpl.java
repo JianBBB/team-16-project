@@ -1,6 +1,6 @@
 package com.sparta.ordersystem.order.management.config;
 
-import com.sparta.ordersystem.order.management.User.config.JwtUtil;
+import com.sparta.ordersystem.order.management.user.config.JwtUtil;
 import io.jsonwebtoken.Claims;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.data.domain.AuditorAware;

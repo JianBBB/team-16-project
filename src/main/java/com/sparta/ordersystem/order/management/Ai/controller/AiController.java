@@ -1,9 +1,9 @@
-package com.sparta.ordersystem.order.management.Ai.controller;
+package com.sparta.ordersystem.order.management.ai.controller;
 
-import com.sparta.ordersystem.order.management.Ai.dto.AiRequestDto;
-import com.sparta.ordersystem.order.management.Ai.dto.AiResponseDto;
-import com.sparta.ordersystem.order.management.Ai.service.AiService;
-import com.sparta.ordersystem.order.management.User.security.UserDetailsImpl;
+import com.sparta.ordersystem.order.management.ai.dto.AiRequestDto;
+import com.sparta.ordersystem.order.management.ai.dto.AiResponseDto;
+import com.sparta.ordersystem.order.management.ai.service.AiService;
+import com.sparta.ordersystem.order.management.user.security.UserDetailsImpl;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;

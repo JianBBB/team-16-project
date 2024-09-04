@@ -1,6 +1,6 @@
-package com.sparta.ordersystem.order.management.Order.dto;
+package com.sparta.ordersystem.order.management.order.dto;
 
-import com.sparta.ordersystem.order.management.Order.entity.OrderStatus;
+import com.sparta.ordersystem.order.management.order.entity.OrderStatus;
 import lombok.Getter;
 import lombok.experimental.SuperBuilder;
 

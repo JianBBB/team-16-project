@@ -1,21 +1,16 @@
-package com.sparta.ordersystem.order.management.Category.controller;
+package com.sparta.ordersystem.order.management.category.controller;
 
-import com.sparta.ordersystem.order.management.Category.dto.*;
-import com.sparta.ordersystem.order.management.Category.service.CategoryService;
+import com.sparta.ordersystem.order.management.category.dto.*;
+import com.sparta.ordersystem.order.management.category.service.CategoryService;
 
-import com.sparta.ordersystem.order.management.User.security.UserDetailsImpl;
+import com.sparta.ordersystem.order.management.user.security.UserDetailsImpl;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.validation.FieldError;
-import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.UUID;
 
 @RestController

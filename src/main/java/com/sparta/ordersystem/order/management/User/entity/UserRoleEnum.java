@@ -1,4 +1,4 @@
-package com.sparta.ordersystem.order.management.User.entity;
+package com.sparta.ordersystem.order.management.user.entity;
 
 public enum UserRoleEnum {
     CUSTOMER(Authority.CUSTOMER),  // 사용자 권한

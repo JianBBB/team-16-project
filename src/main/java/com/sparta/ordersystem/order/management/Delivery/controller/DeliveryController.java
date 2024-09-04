@@ -1,14 +1,13 @@
-package com.sparta.ordersystem.order.management.Delivery.controller;
+package com.sparta.ordersystem.order.management.delivery.controller;
 
-import com.sparta.ordersystem.order.management.Delivery.dto.CreateDeliveryRequestDto;
-import com.sparta.ordersystem.order.management.Delivery.dto.UpdateDeliveryRequestDto;
-import com.sparta.ordersystem.order.management.Delivery.service.DeliveryService;
-import com.sparta.ordersystem.order.management.User.security.UserDetailsImpl;
+import com.sparta.ordersystem.order.management.delivery.dto.CreateDeliveryRequestDto;
+import com.sparta.ordersystem.order.management.delivery.dto.UpdateDeliveryRequestDto;
+import com.sparta.ordersystem.order.management.delivery.service.DeliveryService;
+import com.sparta.ordersystem.order.management.user.security.UserDetailsImpl;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;

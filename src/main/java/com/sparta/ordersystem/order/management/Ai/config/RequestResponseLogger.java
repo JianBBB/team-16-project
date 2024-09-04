@@ -1,4 +1,4 @@
-package com.sparta.ordersystem.order.management.Ai.config;
+package com.sparta.ordersystem.order.management.ai.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,6 +1,6 @@
-package com.sparta.ordersystem.order.management.Ai.repository;
+package com.sparta.ordersystem.order.management.ai.repository;
 
-import com.sparta.ordersystem.order.management.Ai.entity.Ai;
+import com.sparta.ordersystem.order.management.ai.entity.Ai;
 import org.hibernate.validator.constraints.UUID;
 import org.springframework.data.jpa.repository.JpaRepository;
 

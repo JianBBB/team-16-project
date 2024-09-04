@@ -1,10 +1,10 @@
-package com.sparta.ordersystem.order.management.Payment.repository;
+package com.sparta.ordersystem.order.management.payment.repository;
 
 import com.querydsl.jpa.impl.JPAQueryFactory;
-import com.sparta.ordersystem.order.management.Order.entity.QOrder;
-import com.sparta.ordersystem.order.management.Payment.dto.PaymentResponseDto;
-import com.sparta.ordersystem.order.management.Payment.entity.Payment;
-import com.sparta.ordersystem.order.management.Payment.entity.QPayment;
+import com.sparta.ordersystem.order.management.order.entity.QOrder;
+import com.sparta.ordersystem.order.management.payment.dto.PaymentResponseDto;
+import com.sparta.ordersystem.order.management.payment.entity.Payment;
+import com.sparta.ordersystem.order.management.payment.entity.QPayment;
 import lombok.RequiredArgsConstructor;
 
 import java.util.List;

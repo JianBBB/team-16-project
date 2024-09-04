@@ -1,9 +1,9 @@
-package com.sparta.ordersystem.order.management.Region.controller;
+package com.sparta.ordersystem.order.management.region.controller;
 
-import com.sparta.ordersystem.order.management.Region.dto.*;
-import com.sparta.ordersystem.order.management.Region.service.RegionService;
+import com.sparta.ordersystem.order.management.region.dto.*;
+import com.sparta.ordersystem.order.management.region.service.RegionService;
 
-import com.sparta.ordersystem.order.management.User.security.UserDetailsImpl;
+import com.sparta.ordersystem.order.management.user.security.UserDetailsImpl;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

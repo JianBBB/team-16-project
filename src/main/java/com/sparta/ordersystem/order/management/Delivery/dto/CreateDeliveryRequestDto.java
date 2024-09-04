@@ -1,7 +1,7 @@
-package com.sparta.ordersystem.order.management.Delivery.dto;
+package com.sparta.ordersystem.order.management.delivery.dto;
 
-import com.sparta.ordersystem.order.management.Delivery.entity.Delivery;
-import com.sparta.ordersystem.order.management.Order.entity.Order;
+import com.sparta.ordersystem.order.management.delivery.entity.Delivery;
+import com.sparta.ordersystem.order.management.order.entity.Order;
 import lombok.Builder;
 import lombok.Getter;
 

@@ -1,4 +1,4 @@
-package com.sparta.ordersystem.order.management.Menu.dto;
+package com.sparta.ordersystem.order.management.menu.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

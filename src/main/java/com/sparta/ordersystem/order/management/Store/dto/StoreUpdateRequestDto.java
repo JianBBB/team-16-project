@@ -1,4 +1,4 @@
-package com.sparta.ordersystem.order.management.Store.dto;
+package com.sparta.ordersystem.order.management.store.dto;
 
 import lombok.Builder;
 import lombok.Getter;

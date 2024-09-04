@@ -1,6 +1,5 @@
-package com.sparta.ordersystem.order.management.Store.dto;
+package com.sparta.ordersystem.order.management.store.dto;
 
-import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
 import lombok.Getter;
 

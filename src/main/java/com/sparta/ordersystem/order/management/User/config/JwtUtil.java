@@ -1,6 +1,6 @@
-package com.sparta.ordersystem.order.management.User.config;
+package com.sparta.ordersystem.order.management.user.config;
 
-import com.sparta.ordersystem.order.management.User.entity.UserRoleEnum;
+import com.sparta.ordersystem.order.management.user.entity.UserRoleEnum;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
 import jakarta.annotation.PostConstruct;

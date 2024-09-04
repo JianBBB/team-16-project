@@ -1,4 +1,4 @@
-package com.sparta.ordersystem.order.management.User.dto;
+package com.sparta.ordersystem.order.management.user.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

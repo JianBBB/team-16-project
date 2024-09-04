@@ -1,6 +1,6 @@
-package com.sparta.ordersystem.order.management.Ai.entity;
+package com.sparta.ordersystem.order.management.ai.entity;
 
-import com.sparta.ordersystem.order.management.User.entity.User;
+import com.sparta.ordersystem.order.management.user.entity.User;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

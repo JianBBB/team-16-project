@@ -1,4 +1,4 @@
-package com.sparta.ordersystem.order.management.Region.dto;
+package com.sparta.ordersystem.order.management.region.dto;
 
 import lombok.Builder;
 import lombok.Getter;

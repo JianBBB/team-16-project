@@ -1,10 +1,10 @@
-package com.sparta.ordersystem.order.management.Order.dto;
+package com.sparta.ordersystem.order.management.order.dto;
 
-import com.sparta.ordersystem.order.management.Order.entity.Order;
-import com.sparta.ordersystem.order.management.Order.entity.OrderStatus;
-import com.sparta.ordersystem.order.management.Order.entity.OrderType;
-import com.sparta.ordersystem.order.management.Store.entity.Store;
-import com.sparta.ordersystem.order.management.User.entity.User;
+import com.sparta.ordersystem.order.management.order.entity.Order;
+import com.sparta.ordersystem.order.management.order.entity.OrderStatus;
+import com.sparta.ordersystem.order.management.order.entity.OrderType;
+import com.sparta.ordersystem.order.management.store.entity.Store;
+import com.sparta.ordersystem.order.management.user.entity.User;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

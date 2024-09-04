@@ -1,14 +1,14 @@
-package com.sparta.ordersystem.order.management.Delivery.service;
+package com.sparta.ordersystem.order.management.delivery.service;
 
-import com.sparta.ordersystem.order.management.Delivery.dto.CreateDeliveryRequestDto;
-import com.sparta.ordersystem.order.management.Delivery.dto.DeliveryResponseDto;
-import com.sparta.ordersystem.order.management.Delivery.dto.UpdateDeliveryRequestDto;
-import com.sparta.ordersystem.order.management.Delivery.entity.Delivery;
-import com.sparta.ordersystem.order.management.Delivery.exception.DeliveryNotFoundException;
-import com.sparta.ordersystem.order.management.Delivery.repository.DeliveryRepository;
-import com.sparta.ordersystem.order.management.Order.entity.Order;
-import com.sparta.ordersystem.order.management.Order.exception.OrderNotFoundException;
-import com.sparta.ordersystem.order.management.Order.repository.OrderRepository;
+import com.sparta.ordersystem.order.management.delivery.dto.CreateDeliveryRequestDto;
+import com.sparta.ordersystem.order.management.delivery.dto.DeliveryResponseDto;
+import com.sparta.ordersystem.order.management.delivery.dto.UpdateDeliveryRequestDto;
+import com.sparta.ordersystem.order.management.delivery.entity.Delivery;
+import com.sparta.ordersystem.order.management.delivery.exception.DeliveryNotFoundException;
+import com.sparta.ordersystem.order.management.delivery.repository.DeliveryRepository;
+import com.sparta.ordersystem.order.management.order.entity.Order;
+import com.sparta.ordersystem.order.management.order.exception.OrderNotFoundException;
+import com.sparta.ordersystem.order.management.order.repository.OrderRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

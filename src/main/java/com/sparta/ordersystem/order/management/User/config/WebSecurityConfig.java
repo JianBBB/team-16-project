@@ -1,8 +1,8 @@
-package com.sparta.ordersystem.order.management.User.config;
+package com.sparta.ordersystem.order.management.user.config;
 
-import com.sparta.ordersystem.order.management.User.security.JwtAuthenticationFilter;
-import com.sparta.ordersystem.order.management.User.security.JwtAuthorizationFilter;
-import com.sparta.ordersystem.order.management.User.security.UserDetailsServiceImpl;
+import com.sparta.ordersystem.order.management.user.security.JwtAuthenticationFilter;
+import com.sparta.ordersystem.order.management.user.security.JwtAuthorizationFilter;
+import com.sparta.ordersystem.order.management.user.security.UserDetailsServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;

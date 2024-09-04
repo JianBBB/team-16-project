@@ -1,7 +1,7 @@
-package com.sparta.ordersystem.order.management.Region.entity;
+package com.sparta.ordersystem.order.management.region.entity;
 
 
-import com.sparta.ordersystem.order.management.Store.entity.Store;
+import com.sparta.ordersystem.order.management.store.entity.Store;
 import com.sparta.ordersystem.order.management.common.Timestamped;
 import jakarta.persistence.*;
 import lombok.*;

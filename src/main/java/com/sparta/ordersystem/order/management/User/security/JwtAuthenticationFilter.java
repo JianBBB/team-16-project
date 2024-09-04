@@ -1,9 +1,9 @@
-package com.sparta.ordersystem.order.management.User.security;
+package com.sparta.ordersystem.order.management.user.security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sparta.ordersystem.order.management.User.config.JwtUtil;
-import com.sparta.ordersystem.order.management.User.dto.LoginRequestDto;
-import com.sparta.ordersystem.order.management.User.entity.UserRoleEnum;
+import com.sparta.ordersystem.order.management.user.config.JwtUtil;
+import com.sparta.ordersystem.order.management.user.dto.LoginRequestDto;
+import com.sparta.ordersystem.order.management.user.entity.UserRoleEnum;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

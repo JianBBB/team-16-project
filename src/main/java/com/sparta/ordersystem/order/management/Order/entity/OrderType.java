@@ -1,4 +1,4 @@
-package com.sparta.ordersystem.order.management.Order.entity;
+package com.sparta.ordersystem.order.management.order.entity;
 
 public enum OrderType {
     ONLINE, //온라인 주문

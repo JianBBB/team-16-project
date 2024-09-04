@@ -1,4 +1,4 @@
-package com.sparta.ordersystem.order.management.Payment.entity;
+package com.sparta.ordersystem.order.management.payment.entity;
 
 public enum PaymentStatus {
     RUNNING, //결제 진행 중

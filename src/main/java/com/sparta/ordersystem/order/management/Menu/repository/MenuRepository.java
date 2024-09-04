@@ -1,7 +1,7 @@
-package com.sparta.ordersystem.order.management.Menu.repository;
+package com.sparta.ordersystem.order.management.menu.repository;
 
-import com.sparta.ordersystem.order.management.Menu.entity.Menu;
-import com.sparta.ordersystem.order.management.Store.entity.Store;
+import com.sparta.ordersystem.order.management.menu.entity.Menu;
+import com.sparta.ordersystem.order.management.store.entity.Store;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

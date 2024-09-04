@@ -1,7 +1,7 @@
-package com.sparta.ordersystem.order.management.User.security;
+package com.sparta.ordersystem.order.management.user.security;
 
-import com.sparta.ordersystem.order.management.User.entity.User;
-import com.sparta.ordersystem.order.management.User.entity.UserRoleEnum;
+import com.sparta.ordersystem.order.management.user.entity.User;
+import com.sparta.ordersystem.order.management.user.entity.UserRoleEnum;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -69,7 +69,7 @@ public class UserDetailsImpl implements UserDetails {
         return user.getUser_id();
     }
 
-    // User 객체에서 user_id를 반환하는 메서드
+    // user 객체에서 user_id를 반환하는 메서드
     public Long getUserId() {
         return user.getUser_id();
     }

@@ -1,7 +1,6 @@
-package com.sparta.ordersystem.order.management.Region.dto;
+package com.sparta.ordersystem.order.management.region.dto;
 
-import com.sparta.ordersystem.order.management.Category.entity.Category;
-import com.sparta.ordersystem.order.management.Region.entity.Region;
+import com.sparta.ordersystem.order.management.region.entity.Region;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

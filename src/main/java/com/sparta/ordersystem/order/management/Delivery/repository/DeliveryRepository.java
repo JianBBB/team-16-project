@@ -1,9 +1,8 @@
-package com.sparta.ordersystem.order.management.Delivery.repository;
+package com.sparta.ordersystem.order.management.delivery.repository;
 
 
-import com.sparta.ordersystem.order.management.Delivery.entity.Delivery;
-import com.sparta.ordersystem.order.management.Order.entity.Order;
-import jakarta.persistence.Id;
+import com.sparta.ordersystem.order.management.delivery.entity.Delivery;
+import com.sparta.ordersystem.order.management.order.entity.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

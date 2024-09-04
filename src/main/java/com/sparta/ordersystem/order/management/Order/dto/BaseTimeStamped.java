@@ -1,14 +1,7 @@
-package com.sparta.ordersystem.order.management.Order.dto;
+package com.sparta.ordersystem.order.management.order.dto;
 
-import jakarta.persistence.Column;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
-import org.springframework.data.annotation.CreatedBy;
-import org.springframework.data.annotation.LastModifiedBy;
-import org.springframework.data.annotation.LastModifiedDate;
 
 import java.time.LocalDateTime;
 

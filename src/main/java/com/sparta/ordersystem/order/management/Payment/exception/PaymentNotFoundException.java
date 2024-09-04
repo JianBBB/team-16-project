@@ -1,4 +1,4 @@
-package com.sparta.ordersystem.order.management.Payment.exception;
+package com.sparta.ordersystem.order.management.payment.exception;
 
 public class PaymentNotFoundException extends RuntimeException {
 

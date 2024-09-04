@@ -1,6 +1,6 @@
-package com.sparta.ordersystem.order.management.Order.repository;
+package com.sparta.ordersystem.order.management.order.repository;
 
-import com.sparta.ordersystem.order.management.Order.entity.Order;
+import com.sparta.ordersystem.order.management.order.entity.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

@@ -1,11 +1,11 @@
-package com.sparta.ordersystem.order.management.Category;
+package com.sparta.ordersystem.order.management.category;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sparta.ordersystem.order.management.Category.dto.CategoryCreateRequestDto;
-import com.sparta.ordersystem.order.management.Category.dto.CategoryUpdateRequestDto;
-import com.sparta.ordersystem.order.management.User.dto.LoginRequestDto;
-import com.sparta.ordersystem.order.management.User.dto.SignUpRequestDto;
+import com.sparta.ordersystem.order.management.category.dto.CategoryCreateRequestDto;
+import com.sparta.ordersystem.order.management.category.dto.CategoryUpdateRequestDto;
+import com.sparta.ordersystem.order.management.user.dto.LoginRequestDto;
+import com.sparta.ordersystem.order.management.user.dto.SignUpRequestDto;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;

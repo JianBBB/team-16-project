@@ -1,12 +1,11 @@
-package com.sparta.ordersystem.order.management.Category.service;
+package com.sparta.ordersystem.order.management.category.service;
 
-import com.sparta.ordersystem.order.management.Category.dto.*;
-import com.sparta.ordersystem.order.management.Category.entity.Category;
-import com.sparta.ordersystem.order.management.Category.repository.CategoryRepository;
-import com.sparta.ordersystem.order.management.User.entity.User;
-import com.sparta.ordersystem.order.management.User.entity.UserRoleEnum;
+import com.sparta.ordersystem.order.management.category.dto.*;
+import com.sparta.ordersystem.order.management.category.entity.Category;
+import com.sparta.ordersystem.order.management.category.repository.CategoryRepository;
+import com.sparta.ordersystem.order.management.user.entity.User;
+import com.sparta.ordersystem.order.management.user.entity.UserRoleEnum;
 import lombok.RequiredArgsConstructor;
-import org.aspectj.bridge.Message;
 import org.springframework.context.MessageSource;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;

@@ -1,37 +1,24 @@
-package com.sparta.ordersystem.order.management.Category;
+package com.sparta.ordersystem.order.management.category;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sparta.ordersystem.order.management.Category.dto.*;
-import com.sparta.ordersystem.order.management.Category.entity.Category;
-import com.sparta.ordersystem.order.management.Category.repository.CategoryRepository;
-import com.sparta.ordersystem.order.management.User.dto.LoginRequestDto;
-import com.sparta.ordersystem.order.management.User.dto.SignUpRequestDto;
-import com.sparta.ordersystem.order.management.User.entity.User;
-import com.sparta.ordersystem.order.management.User.repository.UserRepository;
+import com.sparta.ordersystem.order.management.category.dto.*;
+import com.sparta.ordersystem.order.management.user.dto.LoginRequestDto;
+import com.sparta.ordersystem.order.management.user.dto.SignUpRequestDto;
+import com.sparta.ordersystem.order.management.user.entity.User;
+import com.sparta.ordersystem.order.management.user.repository.UserRepository;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.domain.AuditorAware;
 import org.springframework.http.MediaType;
-import org.springframework.mock.web.MockHttpServletRequest;
-import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
 
 import java.util.Arrays;
-import java.util.Optional;
 import java.util.UUID;
 
-import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;

@@ -1,14 +1,14 @@
-package com.sparta.ordersystem.order.management.Store.service;
+package com.sparta.ordersystem.order.management.store.service;
 
-import com.sparta.ordersystem.order.management.Category.entity.Category;
-import com.sparta.ordersystem.order.management.Category.repository.CategoryRepository;
-import com.sparta.ordersystem.order.management.Region.entity.Region;
-import com.sparta.ordersystem.order.management.Region.repository.RegionRepository;
-import com.sparta.ordersystem.order.management.Store.dto.*;
-import com.sparta.ordersystem.order.management.Store.entity.Store;
-import com.sparta.ordersystem.order.management.Store.repository.StoreRepository;
-import com.sparta.ordersystem.order.management.User.entity.User;
-import com.sparta.ordersystem.order.management.User.entity.UserRoleEnum;
+import com.sparta.ordersystem.order.management.category.entity.Category;
+import com.sparta.ordersystem.order.management.category.repository.CategoryRepository;
+import com.sparta.ordersystem.order.management.region.entity.Region;
+import com.sparta.ordersystem.order.management.region.repository.RegionRepository;
+import com.sparta.ordersystem.order.management.store.dto.*;
+import com.sparta.ordersystem.order.management.store.entity.Store;
+import com.sparta.ordersystem.order.management.store.repository.StoreRepository;
+import com.sparta.ordersystem.order.management.user.entity.User;
+import com.sparta.ordersystem.order.management.user.entity.UserRoleEnum;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;

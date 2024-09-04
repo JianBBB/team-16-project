@@ -1,4 +1,4 @@
-package com.sparta.ordersystem.order.management.Ai.config;
+package com.sparta.ordersystem.order.management.ai.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

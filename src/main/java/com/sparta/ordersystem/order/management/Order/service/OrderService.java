@@ -1,21 +1,21 @@
-package com.sparta.ordersystem.order.management.Order.service;
+package com.sparta.ordersystem.order.management.order.service;
 
-import com.sparta.ordersystem.order.management.Menu.entity.Menu;
-import com.sparta.ordersystem.order.management.Menu.exception.MenuNotFoundException;
-import com.sparta.ordersystem.order.management.Menu.repository.MenuRepository;
-import com.sparta.ordersystem.order.management.Order.dto.OrderSearchDto;
-import com.sparta.ordersystem.order.management.Order.entity.Order;
-import com.sparta.ordersystem.order.management.Order.entity.OrderStatus;
-import com.sparta.ordersystem.order.management.Order.dto.OrderResponseDto;
-import com.sparta.ordersystem.order.management.Order.dto.CreateOrderRequestDto;
-import com.sparta.ordersystem.order.management.Order.entity.OrderType;
-import com.sparta.ordersystem.order.management.Order.exception.OrderCancelException;
-import com.sparta.ordersystem.order.management.Order.exception.OrderNotFoundException;
-import com.sparta.ordersystem.order.management.Order.repository.OrderRepository;
-import com.sparta.ordersystem.order.management.Store.entity.Store;
-import com.sparta.ordersystem.order.management.Store.repository.StoreRepository;
-import com.sparta.ordersystem.order.management.User.entity.User;
-import com.sparta.ordersystem.order.management.User.entity.UserRoleEnum;
+import com.sparta.ordersystem.order.management.menu.entity.Menu;
+import com.sparta.ordersystem.order.management.menu.exception.MenuNotFoundException;
+import com.sparta.ordersystem.order.management.menu.repository.MenuRepository;
+import com.sparta.ordersystem.order.management.order.dto.OrderSearchDto;
+import com.sparta.ordersystem.order.management.order.entity.Order;
+import com.sparta.ordersystem.order.management.order.entity.OrderStatus;
+import com.sparta.ordersystem.order.management.order.dto.OrderResponseDto;
+import com.sparta.ordersystem.order.management.order.dto.CreateOrderRequestDto;
+import com.sparta.ordersystem.order.management.order.entity.OrderType;
+import com.sparta.ordersystem.order.management.order.exception.OrderCancelException;
+import com.sparta.ordersystem.order.management.order.exception.OrderNotFoundException;
+import com.sparta.ordersystem.order.management.order.repository.OrderRepository;
+import com.sparta.ordersystem.order.management.store.entity.Store;
+import com.sparta.ordersystem.order.management.store.repository.StoreRepository;
+import com.sparta.ordersystem.order.management.user.entity.User;
+import com.sparta.ordersystem.order.management.user.entity.UserRoleEnum;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.MessageSource;
 import org.springframework.data.domain.Page;
@@ -50,7 +50,7 @@ public class OrderService {
         UUID storeId = requestDto.getStore_id();
 
         Store store = storeRepository.findById(storeId).orElseThrow(
-                () -> new IllegalArgumentException("Store with id " + storeId + " not found")
+                () -> new IllegalArgumentException("store with id " + storeId + " not found")
         );
 
         //대면 주문인 경우

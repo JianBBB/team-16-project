@@ -1,10 +1,10 @@
-package com.sparta.ordersystem.order.management.User.controller;
+package com.sparta.ordersystem.order.management.user.controller;
 
-import com.sparta.ordersystem.order.management.User.dto.SignUpRequestDto;
-import com.sparta.ordersystem.order.management.User.dto.UserInfoRequestDto;
-import com.sparta.ordersystem.order.management.User.dto.UserInfoResponseDto;
-import com.sparta.ordersystem.order.management.User.security.UserDetailsImpl;
-import com.sparta.ordersystem.order.management.User.service.UserService;
+import com.sparta.ordersystem.order.management.user.dto.SignUpRequestDto;
+import com.sparta.ordersystem.order.management.user.dto.UserInfoRequestDto;
+import com.sparta.ordersystem.order.management.user.dto.UserInfoResponseDto;
+import com.sparta.ordersystem.order.management.user.security.UserDetailsImpl;
+import com.sparta.ordersystem.order.management.user.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

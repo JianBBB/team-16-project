@@ -1,9 +1,8 @@
-package com.sparta.ordersystem.order.management.Store.controller;
+package com.sparta.ordersystem.order.management.store.controller;
 
-import com.sparta.ordersystem.order.management.Store.dto.*;
-import com.sparta.ordersystem.order.management.Store.service.StoreService;
-import com.sparta.ordersystem.order.management.User.entity.UserRoleEnum;
-import com.sparta.ordersystem.order.management.User.security.UserDetailsImpl;
+import com.sparta.ordersystem.order.management.store.service.StoreService;
+import com.sparta.ordersystem.order.management.user.entity.UserRoleEnum;
+import com.sparta.ordersystem.order.management.user.security.UserDetailsImpl;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.AccessDeniedException;
@@ -21,17 +20,17 @@ public class StoreController {
     private final StoreService storeService;
 
     @PostMapping("/stores")
-    public StoreCreateResponseDto createStore(@RequestBody @Valid StoreCreateRequestDto storeCreateRequestDto, @AuthenticationPrincipal UserDetailsImpl userDetails){
+    public com.sparta.ordersystem.order.management.store.dto.StoreCreateResponseDto createStore(@RequestBody @Valid com.sparta.ordersystem.order.management.store.dto.StoreCreateRequestDto storeCreateRequestDto, @AuthenticationPrincipal UserDetailsImpl userDetails){
         return storeService.createStore(storeCreateRequestDto, userDetails.getUser());
     }
 
     @GetMapping("/stores/{store_id}")
-    public StoreGetResponseDto getStore(@PathVariable UUID store_id){
+    public com.sparta.ordersystem.order.management.store.dto.StoreGetResponseDto getStore(@PathVariable UUID store_id){
         return storeService.getStore(store_id);
     }
 
     @GetMapping("/stores")
-    public List<StoreGetResponseDto> getAllStore(
+    public List<com.sparta.ordersystem.order.management.store.dto.StoreGetResponseDto> getAllStore(
             @RequestParam(name="region_id",required = false) UUID regionId,
             @RequestParam(name="category_id", required = false) UUID categoryId,
             @RequestParam(name="page") int page,
@@ -75,15 +74,15 @@ public class StoreController {
 
 
     @PatchMapping("/stores/{store_id}")
-    public StoreUpdateResponseDto updateStore(@PathVariable(name="store_id") UUID storeId,
-                                              @RequestBody StoreUpdateRequestDto storeUpdateRequestDto,
-                                              @AuthenticationPrincipal UserDetailsImpl userDetails){
+    public com.sparta.ordersystem.order.management.store.dto.StoreUpdateResponseDto updateStore(@PathVariable(name="store_id") UUID storeId,
+                                                                                                @RequestBody com.sparta.ordersystem.order.management.store.dto.StoreUpdateRequestDto storeUpdateRequestDto,
+                                                                                                @AuthenticationPrincipal UserDetailsImpl userDetails){
         return storeService.updateService(storeId, storeUpdateRequestDto, userDetails.getUser() );
     }
 
     @DeleteMapping("/stores/{store_id}")
-    public StoreDeleteResponseDto deleteStore(@PathVariable(name="store_id") UUID storeId,
-                                              @AuthenticationPrincipal UserDetailsImpl userDetails){
+    public com.sparta.ordersystem.order.management.store.dto.StoreDeleteResponseDto deleteStore(@PathVariable(name="store_id") UUID storeId,
+                                                                                                @AuthenticationPrincipal UserDetailsImpl userDetails){
         return storeService.deleteService(storeId, userDetails.getUser());
     }
 }

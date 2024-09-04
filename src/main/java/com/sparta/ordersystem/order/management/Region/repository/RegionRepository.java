@@ -1,6 +1,6 @@
-package com.sparta.ordersystem.order.management.Region.repository;
+package com.sparta.ordersystem.order.management.region.repository;
 
-import com.sparta.ordersystem.order.management.Region.entity.Region;
+import com.sparta.ordersystem.order.management.region.entity.Region;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

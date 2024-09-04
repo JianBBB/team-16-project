@@ -1,15 +1,15 @@
-package com.sparta.ordersystem.order.management.Menu.service;
+package com.sparta.ordersystem.order.management.menu.service;
 
-import com.sparta.ordersystem.order.management.Menu.dto.CreateMenuRequestDto;
-import com.sparta.ordersystem.order.management.Menu.dto.MenuResponseDto;
-import com.sparta.ordersystem.order.management.Menu.dto.UpdateRequestDto;
-import com.sparta.ordersystem.order.management.Menu.entity.Menu;
-import com.sparta.ordersystem.order.management.Menu.exception.MenuNotFoundException;
-import com.sparta.ordersystem.order.management.Menu.repository.MenuRepository;
-import com.sparta.ordersystem.order.management.Store.entity.Store;
-import com.sparta.ordersystem.order.management.Store.repository.StoreRepository;
-import com.sparta.ordersystem.order.management.User.entity.User;
-import com.sparta.ordersystem.order.management.User.entity.UserRoleEnum;
+import com.sparta.ordersystem.order.management.menu.dto.CreateMenuRequestDto;
+import com.sparta.ordersystem.order.management.menu.dto.MenuResponseDto;
+import com.sparta.ordersystem.order.management.menu.dto.UpdateRequestDto;
+import com.sparta.ordersystem.order.management.menu.entity.Menu;
+import com.sparta.ordersystem.order.management.menu.exception.MenuNotFoundException;
+import com.sparta.ordersystem.order.management.menu.repository.MenuRepository;
+import com.sparta.ordersystem.order.management.store.entity.Store;
+import com.sparta.ordersystem.order.management.store.repository.StoreRepository;
+import com.sparta.ordersystem.order.management.user.entity.User;
+import com.sparta.ordersystem.order.management.user.entity.UserRoleEnum;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.MessageSource;
 import org.springframework.security.access.AccessDeniedException;

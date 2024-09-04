@@ -1,13 +1,12 @@
-package com.sparta.ordersystem.order.management.Menu.controller;
+package com.sparta.ordersystem.order.management.menu.controller;
 
-import com.sparta.ordersystem.order.management.User.entity.User;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import com.sparta.ordersystem.order.management.Menu.dto.CreateMenuRequestDto;
-import com.sparta.ordersystem.order.management.Menu.dto.MenuResponseDto;
-import com.sparta.ordersystem.order.management.Menu.dto.UpdateRequestDto;
-import com.sparta.ordersystem.order.management.Menu.entity.Menu;
-import com.sparta.ordersystem.order.management.Menu.service.MenuService;
-import com.sparta.ordersystem.order.management.User.security.UserDetailsImpl;
+import com.sparta.ordersystem.order.management.menu.dto.CreateMenuRequestDto;
+import com.sparta.ordersystem.order.management.menu.dto.MenuResponseDto;
+import com.sparta.ordersystem.order.management.menu.dto.UpdateRequestDto;
+import com.sparta.ordersystem.order.management.menu.entity.Menu;
+import com.sparta.ordersystem.order.management.menu.service.MenuService;
+import com.sparta.ordersystem.order.management.user.security.UserDetailsImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

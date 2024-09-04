@@ -1,4 +1,4 @@
-package com.sparta.ordersystem.order.management.Ai.dto;
+package com.sparta.ordersystem.order.management.ai.dto;
 
 import lombok.Getter;
 import lombok.Setter;

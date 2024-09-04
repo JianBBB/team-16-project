@@ -1,8 +1,8 @@
-package com.sparta.ordersystem.order.management.Order.repository;
+package com.sparta.ordersystem.order.management.order.repository;
 
-import com.sparta.ordersystem.order.management.Order.dto.OrderResponseDto;
-import com.sparta.ordersystem.order.management.Order.dto.OrderSearchDto;
-import com.sparta.ordersystem.order.management.User.entity.User;
+import com.sparta.ordersystem.order.management.order.dto.OrderResponseDto;
+import com.sparta.ordersystem.order.management.order.dto.OrderSearchDto;
+import com.sparta.ordersystem.order.management.user.entity.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

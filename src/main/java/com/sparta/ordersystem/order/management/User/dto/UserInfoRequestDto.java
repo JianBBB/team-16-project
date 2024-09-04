@@ -1,6 +1,5 @@
-package com.sparta.ordersystem.order.management.User.dto;
+package com.sparta.ordersystem.order.management.user.dto;
 
-import com.sparta.ordersystem.order.management.User.entity.UserRoleEnum;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;

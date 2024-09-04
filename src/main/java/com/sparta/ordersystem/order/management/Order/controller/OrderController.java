@@ -1,12 +1,11 @@
-package com.sparta.ordersystem.order.management.Order.controller;
+package com.sparta.ordersystem.order.management.order.controller;
 
-import com.sparta.ordersystem.order.management.Order.dto.OrderSearchDto;
-import com.sparta.ordersystem.order.management.Order.entity.Order;
-import com.sparta.ordersystem.order.management.Order.entity.OrderStatus;
-import com.sparta.ordersystem.order.management.Order.service.OrderService;
-import com.sparta.ordersystem.order.management.Order.dto.CreateOrderRequestDto;
-import com.sparta.ordersystem.order.management.Order.dto.UpdateOrderStateRequestDto;
-import com.sparta.ordersystem.order.management.User.security.UserDetailsImpl;
+import com.sparta.ordersystem.order.management.order.entity.Order;
+import com.sparta.ordersystem.order.management.order.entity.OrderStatus;
+import com.sparta.ordersystem.order.management.order.service.OrderService;
+import com.sparta.ordersystem.order.management.order.dto.CreateOrderRequestDto;
+import com.sparta.ordersystem.order.management.order.dto.UpdateOrderStateRequestDto;
+import com.sparta.ordersystem.order.management.user.security.UserDetailsImpl;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Pageable;

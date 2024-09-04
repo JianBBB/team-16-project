@@ -1,13 +1,12 @@
-package com.sparta.ordersystem.order.management.Store.entity;
+package com.sparta.ordersystem.order.management.store.entity;
 
-import com.sparta.ordersystem.order.management.Category.entity.Category;
-import com.sparta.ordersystem.order.management.Region.entity.Region;
-import com.sparta.ordersystem.order.management.User.entity.User;
+import com.sparta.ordersystem.order.management.category.entity.Category;
+import com.sparta.ordersystem.order.management.region.entity.Region;
+import com.sparta.ordersystem.order.management.user.entity.User;
 import com.sparta.ordersystem.order.management.common.Timestamped;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
-import org.hibernate.annotations.SoftDelete;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

@@ -1,8 +1,7 @@
-package com.sparta.ordersystem.order.management.User.security;
+package com.sparta.ordersystem.order.management.user.security;
 
-import com.sparta.ordersystem.order.management.User.entity.User;
-import com.sparta.ordersystem.order.management.User.repository.UserRepository;
-import lombok.RequiredArgsConstructor;
+import com.sparta.ordersystem.order.management.user.entity.User;
+import com.sparta.ordersystem.order.management.user.repository.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -22,7 +21,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         User user = userRepository.findByEmail(email)
                 .orElseThrow(() -> new UsernameNotFoundException("Not Found " + email));
 
-        // UserDetailsImpl 객체를 생성할 때 User 객체를 전달합니다.
+        // UserDetailsImpl 객체를 생성할 때 user 객체를 전달합니다.
         return new UserDetailsImpl(user);
     }
 }

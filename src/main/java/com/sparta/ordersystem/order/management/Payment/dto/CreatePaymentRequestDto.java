@@ -1,10 +1,10 @@
-package com.sparta.ordersystem.order.management.Payment.dto;
+package com.sparta.ordersystem.order.management.payment.dto;
 
 
-import com.sparta.ordersystem.order.management.Order.entity.Order;
-import com.sparta.ordersystem.order.management.Payment.entity.Payment;
-import com.sparta.ordersystem.order.management.Payment.entity.PaymentMethod;
-import com.sparta.ordersystem.order.management.Payment.entity.PaymentStatus;
+import com.sparta.ordersystem.order.management.order.entity.Order;
+import com.sparta.ordersystem.order.management.payment.entity.Payment;
+import com.sparta.ordersystem.order.management.payment.entity.PaymentMethod;
+import com.sparta.ordersystem.order.management.payment.entity.PaymentStatus;
 import lombok.Builder;
 import lombok.Getter;
 

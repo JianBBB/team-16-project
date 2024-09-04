@@ -1,6 +1,6 @@
-package com.sparta.ordersystem.order.management.Category.repository;
+package com.sparta.ordersystem.order.management.category.repository;
 
-import com.sparta.ordersystem.order.management.Category.entity.Category;
+import com.sparta.ordersystem.order.management.category.entity.Category;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

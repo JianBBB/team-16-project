@@ -1,6 +1,6 @@
-package com.sparta.ordersystem.order.management.Store.repository;
+package com.sparta.ordersystem.order.management.store.repository;
 
-import com.sparta.ordersystem.order.management.Store.entity.Store;
+import com.sparta.ordersystem.order.management.store.entity.Store;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

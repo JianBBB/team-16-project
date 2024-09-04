@@ -1,8 +1,8 @@
-package com.sparta.ordersystem.order.management.Menu.entity;
+package com.sparta.ordersystem.order.management.menu.entity;
 
-import com.sparta.ordersystem.order.management.Menu.dto.UpdateRequestDto;
+import com.sparta.ordersystem.order.management.menu.dto.UpdateRequestDto;
 import com.sparta.ordersystem.order.management.OrderMenu.OrderMenu;
-import com.sparta.ordersystem.order.management.Store.entity.Store;
+import com.sparta.ordersystem.order.management.store.entity.Store;
 import com.sparta.ordersystem.order.management.common.Timestamped;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

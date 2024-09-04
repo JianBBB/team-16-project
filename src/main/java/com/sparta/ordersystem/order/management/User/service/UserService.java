@@ -1,11 +1,11 @@
-package com.sparta.ordersystem.order.management.User.service;
+package com.sparta.ordersystem.order.management.user.service;
 
-import com.sparta.ordersystem.order.management.User.dto.UserInfoRequestDto;
-import com.sparta.ordersystem.order.management.User.dto.UserInfoResponseDto;
-import com.sparta.ordersystem.order.management.User.dto.SignUpRequestDto;
-import com.sparta.ordersystem.order.management.User.entity.User;
-import com.sparta.ordersystem.order.management.User.entity.UserRoleEnum;
-import com.sparta.ordersystem.order.management.User.repository.UserRepository;
+import com.sparta.ordersystem.order.management.user.dto.UserInfoRequestDto;
+import com.sparta.ordersystem.order.management.user.dto.UserInfoResponseDto;
+import com.sparta.ordersystem.order.management.user.dto.SignUpRequestDto;
+import com.sparta.ordersystem.order.management.user.entity.User;
+import com.sparta.ordersystem.order.management.user.entity.UserRoleEnum;
+import com.sparta.ordersystem.order.management.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

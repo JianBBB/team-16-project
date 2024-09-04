@@ -1,11 +1,11 @@
-package com.sparta.ordersystem.order.management.Region;
+package com.sparta.ordersystem.order.management.region;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sparta.ordersystem.order.management.Region.dto.RegionCreateRequestDto;
-import com.sparta.ordersystem.order.management.Region.dto.RegionUpdateRequestDto;
-import com.sparta.ordersystem.order.management.User.dto.LoginRequestDto;
-import com.sparta.ordersystem.order.management.User.dto.SignUpRequestDto;
+import com.sparta.ordersystem.order.management.region.dto.RegionCreateRequestDto;
+import com.sparta.ordersystem.order.management.region.dto.RegionUpdateRequestDto;
+import com.sparta.ordersystem.order.management.user.dto.LoginRequestDto;
+import com.sparta.ordersystem.order.management.user.dto.SignUpRequestDto;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;

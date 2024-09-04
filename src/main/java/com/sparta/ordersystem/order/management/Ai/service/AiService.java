@@ -1,13 +1,13 @@
-package com.sparta.ordersystem.order.management.Ai.service;
+package com.sparta.ordersystem.order.management.ai.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sparta.ordersystem.order.management.Ai.dto.AiRequestDto;
-import com.sparta.ordersystem.order.management.Ai.dto.AiResponseDto;
-import com.sparta.ordersystem.order.management.Ai.entity.Ai;
-import com.sparta.ordersystem.order.management.Ai.repository.AiRepository;
-import com.sparta.ordersystem.order.management.User.entity.User;
-import com.sparta.ordersystem.order.management.User.repository.UserRepository;
+import com.sparta.ordersystem.order.management.ai.dto.AiRequestDto;
+import com.sparta.ordersystem.order.management.ai.dto.AiResponseDto;
+import com.sparta.ordersystem.order.management.ai.entity.Ai;
+import com.sparta.ordersystem.order.management.ai.repository.AiRepository;
+import com.sparta.ordersystem.order.management.user.entity.User;
+import com.sparta.ordersystem.order.management.user.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
@@ -54,20 +54,20 @@ public class AiService {
 
         // 사용자 조회
         User user = userRepository.findById(user_id)
-                .orElseThrow(() -> new RuntimeException("User not found with id: " + user_id));
+                .orElseThrow(() -> new RuntimeException("user not found with id: " + user_id));
 
 
         // 데이터 저장 및 DTO 반환
         Ai ai = new Ai(responseText, user);
 
         // 로그 추가
-        System.out.println("Saving Ai entity: " + ai.toString());
+        System.out.println("Saving ai entity: " + ai.toString());
 
         try {
             aiRepository.save(ai);
-            System.out.println("Successfully saved Ai entity.");
+            System.out.println("Successfully saved ai entity.");
         } catch (Exception e) {
-            System.err.println("Error saving Ai entity: " + e.getMessage());
+            System.err.println("Error saving ai entity: " + e.getMessage());
             throw e;
         }
 
