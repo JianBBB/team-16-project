@@ -9,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.context.MessageSource;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Slice;
 import org.springframework.data.domain.Sort;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.stereotype.Service;
@@ -31,8 +32,8 @@ public class CategoryService {
 
     private final String CREATE_ACTION = "생성";
     private final String UPDATE_ACTION = "수정";
-    private final String GET_ACTION = "조회";
     private final String DELETE_ACTION = "삭제";
+    private final String GET_ACTION = "조회";
 
     /**
      * 관리자 또는 마스터가 새로운 카테고리 생성
@@ -78,16 +79,13 @@ public class CategoryService {
      * @return 조회한 카테고리 정보 전체
      */
     @Transactional(readOnly = true)
-    public List<CategoryGetResponseDto> getAllCategory(int page, int size, String sortBy, boolean isAsc) {
+    public Slice<CategoryGetResponseDto> getAllCategory(int page, int size, String sortBy, boolean isAsc) {
         Sort.Direction direction = isAsc ? Sort.Direction.ASC : Sort.Direction.DESC;
         Sort sort = Sort.by(direction, sortBy);
 
         Pageable pageable = PageRequest.of(page,size, sort);
 
-
-        return categoryRepository.findAllByIsActiveTrue(pageable).stream()
-                .map(this::convertToCategoryGetResponseDto)
-                .toList();
+        return convertToCategoryGetResponseSliceDto(categoryRepository.findAllByIsActiveTrue(pageable));
     }
 
     /**
@@ -228,6 +226,16 @@ public class CategoryService {
                 .categoryId(category.getCategoryId())
                 .categoryName(category.getCategoryName())
                 .build();
+    }
+
+    /**
+     * Slice<Category> -> Slice<CategoryGetRepsonseDto> 변환
+     *
+     * @param categories 변환할 Slice<카테고리> 엔티티
+     * @return 조회한 카테고리 정보 담은 Slice<Dto>
+     */
+    private Slice<CategoryGetResponseDto> convertToCategoryGetResponseSliceDto (Slice<Category> categories){
+        return categories.map(this::convertToCategoryGetResponseDto);
     }
 
     /**
