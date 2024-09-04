@@ -10,7 +10,7 @@ import com.sparta.ordersystem.order.management.order.entity.Order;
 import com.sparta.ordersystem.order.management.order.dto.OrderMenuDto;
 import com.sparta.ordersystem.order.management.order.dto.OrderResponseDto;
 import com.sparta.ordersystem.order.management.order.entity.QOrder;
-import com.sparta.ordersystem.order.management.OrderMenu.QOrderMenu;
+import com.sparta.ordersystem.order.management.ordermenu.QOrderMenu;
 import com.sparta.ordersystem.order.management.store.entity.Store;
 import com.sparta.ordersystem.order.management.user.entity.User;
 import com.sparta.ordersystem.order.management.user.entity.UserRoleEnum;
