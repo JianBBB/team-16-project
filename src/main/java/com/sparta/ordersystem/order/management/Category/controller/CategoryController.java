@@ -6,6 +6,7 @@ import com.sparta.ordersystem.order.management.category.service.CategoryService;
 import com.sparta.ordersystem.order.management.user.security.UserDetailsImpl;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Slice;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -37,10 +38,10 @@ public class CategoryController {
     }
 
     @GetMapping("/category")
-    public ResponseEntity<Slice<CategoryGetResponseDto>> getAllCategories(@RequestParam("page") int page,
-                                                                          @RequestParam("size") int size,
-                                                                          @RequestParam("sortBy") String sortBy,
-                                                                          @RequestParam("isAsc") boolean isAsc){
+    public ResponseEntity<Page<CategoryGetResponseDto>> getAllCategories(@RequestParam("page") int page,
+                                                                         @RequestParam("size") int size,
+                                                                         @RequestParam("sortBy") String sortBy,
+                                                                         @RequestParam("isAsc") boolean isAsc){
         return ResponseEntity.ok(
                 categoryService.getAllCategory(page-1, size, sortBy, isAsc)
         );
