@@ -6,6 +6,7 @@ import com.sparta.ordersystem.order.management.common.Timestamped;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
+import org.hibernate.annotations.GenericGenerator;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -20,6 +21,11 @@ public class Category extends Timestamped {
 
     @Id
     @Column(name="category_id")
+    @GeneratedValue(strategy = GenerationType.UUID)
+    @GenericGenerator(
+            name = "UUID",
+            strategy = "org.hibernate.id.UUIDGenerator"
+    )
     private UUID categoryId;
 
     @Column(name="category_name")
@@ -36,7 +42,6 @@ public class Category extends Timestamped {
 
     @Builder
     public Category(String categoryName) {
-        this.categoryId = UUID.randomUUID();  // UUID 자동 생성
         this.categoryName = categoryName;
         this.isActive = true;
     }
