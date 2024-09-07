@@ -767,10 +767,10 @@ class CategoryServiceIntegrationTest {
                             .contentType(MediaType.APPLICATION_JSON)
                             .header("Authorization", jwtMasterToken))
                     .andExpect(status().isOk())
-                    .andExpect(jsonPath("$.length()").value(createCategoryLength))
-                    .andExpect(jsonPath("$[0].categoryName").value(sortedArr[0]))
-                    .andExpect(jsonPath("$[1].categoryName").value(sortedArr[1]))
-                    .andExpect(jsonPath("$[2].categoryName").value(sortedArr[2]));
+                    .andExpect(jsonPath("$.content.length()").value(createCategoryLength))
+                    .andExpect(jsonPath("$.content[0].categoryName").value(sortedArr[0]))
+                    .andExpect(jsonPath("$.content[1].categoryName").value(sortedArr[1]))
+                    .andExpect(jsonPath("$.content[2].categoryName").value(sortedArr[2]));
 
             // 카테고리 전체 조회 - Owner
             mockMvc.perform(get("/api/v1/category")
@@ -781,11 +781,10 @@ class CategoryServiceIntegrationTest {
                             .contentType(MediaType.APPLICATION_JSON)
                             .header("Authorization", jwtOwnerToken))
                     .andExpect(status().isOk())
-                    .andExpect(jsonPath("$.length()").value(createCategoryLength))
-                    .andExpect(jsonPath("$[0].categoryName").value(sortedArr[0]))
-                    .andExpect(jsonPath("$[1].categoryName").value(sortedArr[1]))
-                    .andExpect(jsonPath("$[2].categoryName").value(sortedArr[2]));
-
+                    .andExpect(jsonPath("$.content.length()").value(createCategoryLength))
+                    .andExpect(jsonPath("$.content[0].categoryName").value(sortedArr[0]))
+                    .andExpect(jsonPath("$.content[1].categoryName").value(sortedArr[1]))
+                    .andExpect(jsonPath("$.content[2].categoryName").value(sortedArr[2]));
 
             // 카테고리 전체 조회 - Customer
             mockMvc.perform(get("/api/v1/category")
@@ -796,10 +795,10 @@ class CategoryServiceIntegrationTest {
                             .contentType(MediaType.APPLICATION_JSON)
                             .header("Authorization", jwtCustomerToken))
                     .andExpect(status().isOk())
-                    .andExpect(jsonPath("$.length()").value(createCategoryLength))
-                    .andExpect(jsonPath("$[0].categoryName").value(sortedArr[0]))
-                    .andExpect(jsonPath("$[1].categoryName").value(sortedArr[1]))
-                    .andExpect(jsonPath("$[2].categoryName").value(sortedArr[2]));
+                    .andExpect(jsonPath("$.content.length()").value(createCategoryLength))
+                    .andExpect(jsonPath("$.content[0].categoryName").value(sortedArr[0]))
+                    .andExpect(jsonPath("$.content[1].categoryName").value(sortedArr[1]))
+                    .andExpect(jsonPath("$.content[2].categoryName").value(sortedArr[2]));
         }
 
 
