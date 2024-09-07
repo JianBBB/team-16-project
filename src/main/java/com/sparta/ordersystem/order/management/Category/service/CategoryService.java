@@ -7,10 +7,7 @@ import com.sparta.ordersystem.order.management.user.entity.User;
 import com.sparta.ordersystem.order.management.user.entity.UserRoleEnum;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.MessageSource;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Slice;
-import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.*;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -79,13 +76,13 @@ public class CategoryService {
      * @return 조회한 카테고리 정보 전체
      */
     @Transactional(readOnly = true)
-    public Slice<CategoryGetResponseDto> getAllCategory(int page, int size, String sortBy, boolean isAsc) {
+    public Page<CategoryGetResponseDto> getAllCategory(int page, int size, String sortBy, boolean isAsc) {
         Sort.Direction direction = isAsc ? Sort.Direction.ASC : Sort.Direction.DESC;
         Sort sort = Sort.by(direction, sortBy);
 
         Pageable pageable = PageRequest.of(page,size, sort);
+        return categoryRepository.findAllByIsActiveTrue(pageable).map(this::convertToCategoryGetResponseDto);
 
-        return convertToCategoryGetResponseSliceDto(categoryRepository.findAllByIsActiveTrue(pageable));
     }
 
     /**
@@ -228,15 +225,6 @@ public class CategoryService {
                 .build();
     }
 
-    /**
-     * Slice<Category> -> Slice<CategoryGetRepsonseDto> 변환
-     *
-     * @param categories 변환할 Slice<카테고리> 엔티티
-     * @return 조회한 카테고리 정보 담은 Slice<Dto>
-     */
-    private Slice<CategoryGetResponseDto> convertToCategoryGetResponseSliceDto (Slice<Category> categories){
-        return categories.map(this::convertToCategoryGetResponseDto);
-    }
 
     /**
      * Category -> CategoryUpdateResponseDto 변환
